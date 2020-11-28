@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-		<Quote :author="author" />
+		<Quote :text="text" />
+		<Author :author="author" :genre="genre" />
   </div>
 </template>
 
@@ -8,13 +9,15 @@
 import { defineComponent } from 'vue';
 
 import Quote from '@/components/Quote.vue';
+import Author from '@/components/Author.vue';
 import { getRandomQuote } from '@/scripts/apiRequests';
 import mitt from '@/mitt';
 
 export default defineComponent({
 	name: 'Home',
 	components: {
-		Quote
+		Quote,
+		Author
 	},
 	data () {
 		return {
