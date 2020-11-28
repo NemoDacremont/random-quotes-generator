@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import { Quote } from './index';
+import { Quote } from './randomQuote';
 
 const authorURLRequest = 'https://quote-garden.herokuapp.com/api/v2/authors/{{author}}?page=1&limit=3'
 
