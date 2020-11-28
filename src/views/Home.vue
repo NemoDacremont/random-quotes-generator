@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-		<Quote :author="author" :text="text" :genre="genre" />
+		<Quote :author="author" />
   </div>
 </template>
 
