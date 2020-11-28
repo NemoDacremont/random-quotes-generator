@@ -1,10 +1,19 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+	<header>
+		<nav id="nav">
+			<router-link to="/">Random</router-link>
+		</nav>
+	</header>
   <router-view/>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+	name: 'App'
+});
+</script>
 
 <style lang="scss">
 #app {
