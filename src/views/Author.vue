@@ -27,7 +27,7 @@ export default defineComponent({
 	data (): Data {
 		return {
 			author: (Array.isArray(this.$route.params.id))
-				? this.$route.params.id.join('')
+				? this.$route.params.id.join(' ')
 				:this.$route.params.id,
 			quotes: []
 		}
