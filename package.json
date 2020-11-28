@@ -1,12 +1,14 @@
 {
   "name": "random-quote-generator",
   "version": "0.1.0",
-  "private": true,
+	"private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
+		"lint": "vue-cli-service lint",
+		"deploy": "gh-pages -d dist"
+	},
+	"homepage": "https://odasta.github.io/random-quotes-generator/",
   "dependencies": {
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
