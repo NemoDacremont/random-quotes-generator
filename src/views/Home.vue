@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-		<Quote />
+		<Quote author="einstein" text="bonjour!" genre="physics" />
   </div>
 </template>
 

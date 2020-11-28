@@ -1,10 +1,11 @@
 <template>
 	<div class="quote">
-		<blockquote>
-			quote
+		<blockquote class="quote__text">
+			{{ text }}
 		</blockquote>
 		<cite>
-			from idk
+			<span class="quote__author">{{ author }}</span>
+			<span class="quote__genre">{{ genre }}</span>
 		</cite>
 	</div>
 </template>
@@ -13,7 +14,18 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-	name: 'Quote'
+	name: 'Quote',
+	props: {
+		author: {
+			type: String
+		},
+		genre: {
+			type: String
+		},
+		text: {
+			type: String
+		}
+	}
 });
 </script>
 
