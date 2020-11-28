@@ -1,24 +1,13 @@
-# random-quote-generator
+# random-quotes-generator
 
-## Project setup
-```
-npm install
-```
+## This is a project from https://devchallenges.io/
+Link to the challenge page: https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Credits for used technologies:
+* vuejs: [Official site](https://vuejs.org/)
+* scss : [Official site](https://sass-lang.com/)
+* typescript: [Official site](https://www.typescriptlang.org)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+There is more but these are the main used.
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
