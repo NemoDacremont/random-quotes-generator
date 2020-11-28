@@ -2,13 +2,25 @@
 import { getRandomQuote } from './randomQuote';
 import { getAuthorQuotes } from './authorQuote';
 
-// Export ./randomQuote interfaces
+export interface Quote {
+	_id: string;
+	quoteText: string;
+	quoteAuthor: string;
+	quoteGenre: string;
+}
 
-//export { Quote, ApiRandomQuoteResponse } from './randomQuote';
+export interface ApiRandomQuoteResponse {
+	statusCode: number;
+	quote: Quote;
+}
 
-// Export ./authorQuote interfaces
-
-//export { ApiAuthorResponse } from './authorQuote';
+export interface ApiAuthorResponse {
+	statusCode: number;
+  message: string;
+  totalPages: number;
+  currentPage: number;
+  quotes: Quote[];
+}
 
 // Export api requests function
 

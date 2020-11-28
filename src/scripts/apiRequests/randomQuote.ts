@@ -1,19 +1,8 @@
 
 import axios from 'axios';
+import { ApiRandomQuoteResponse } from './index';
 
 const randomURLRequest = 'https://quote-garden.herokuapp.com/api/v2/quotes/random';
-
-export interface Quote {
-	_id: string;
-	quoteText: string;
-	quoteAuthor: string;
-	quoteGenre: string;
-}
-
-export interface ApiRandomQuoteResponse {
-	statusCode: number;
-	quote: Quote;
-}
 
 export function getRandomQuote (): Promise<ApiRandomQuoteResponse> {
 	return new Promise((resolve, reject) => {

@@ -14,7 +14,7 @@
 import { defineComponent } from 'vue';
 import { getAuthorQuotes } from '@/scripts/apiRequests';
 
-import { Quote as QuoteInterface } from '@/scripts/apiRequests/randomQuote';
+import { Quote as QuoteInterface } from '@/scripts/apiRequests';
 import Quote from '@/components/Quote.vue';
 
 interface Data {
