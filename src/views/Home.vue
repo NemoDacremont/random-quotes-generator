@@ -21,9 +21,9 @@ export default defineComponent({
 	},
 	data () {
 		return {
-			author: 'loading',
-			text: 'loading',
-			genre: 'loading'
+			author: 'loading...',
+			text: 'loading...',
+			genre: 'loading...'
 		}
 	},
 	methods: {
@@ -43,14 +43,11 @@ export default defineComponent({
 	created () {
 		this.loadRandomQuote();
 
-		mitt.on('loadRandomQuote', () => {
-			console.log('loadRandomQuote');
-			this.loadRandomQuote();
-		});
+		mitt.on('loadRandomQuote', this.loadRandomQuote);
 	},
-	/*beforeUnmount () {
+	beforeUnmount () {
 		mitt.off('loadRandomQuote', this.loadRandomQuote);
-	}*/
+	}
 });
 </script>
 
@@ -59,7 +56,9 @@ export default defineComponent({
 .home {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 110px;
+	width: 100%;
 
 	padding: 196px 0 0 0;
 }

@@ -52,7 +52,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .author {
-	padding-top: 16px;
+	padding: 16px 0 232px;
 	width: 100%;
 
 	h2 {

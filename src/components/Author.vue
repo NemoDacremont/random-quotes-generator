@@ -34,6 +34,7 @@ export default defineComponent({
 
 a {
 	text-decoration: none;
+	width: 100%;
 }
 
 .quote-details {
