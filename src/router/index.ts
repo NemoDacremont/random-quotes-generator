@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue';
+import Author from '@/views/Author.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
     component: Home
-  },
+	},
+	{
+		path: '/author/:id',
+		name: 'Author',
+		component: Author
+	}
 ]
 
 const router = createRouter({
