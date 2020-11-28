@@ -4,7 +4,7 @@
 			{{ text }}
 		</blockquote>
 		<cite>
-			<span class="quote__author">{{ author }}</span>
+			<span class="quote__author">{{ author }}</span> | 
 			<span class="quote__genre">{{ genre }}</span>
 		</cite>
 	</div>
