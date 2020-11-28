@@ -41,11 +41,18 @@ export default defineComponent({
 	}
 
 	.quote__text {
-		padding-left: 100px;
 		font-size: 36px;
 		font-weight: 500;
 		line-height: 43px;
 		text-align: left;
+
+		&::before {
+			content: '“';
+		}
+
+		&::after {
+			content: '”';
+		}
 	}
 }
 

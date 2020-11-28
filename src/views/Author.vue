@@ -1,6 +1,6 @@
 <template>
 	<div class="author">
-		{{ author }}
+		<h2>{{ author }}</h2>
 
 		<ul>
 			<li v-for="(quote, index) in quotes" :key="index">
@@ -51,5 +51,27 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.author {
+	padding-top: 16px;
+	width: 100%;
 
+	h2 {
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 42px;
+		text-align: left;
+	}
+
+	&,
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 140px;
+	}
+
+	ul {
+		list-style: none;
+	}
+}
 </style>
