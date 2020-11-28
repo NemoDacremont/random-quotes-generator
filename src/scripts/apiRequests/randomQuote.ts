@@ -14,7 +14,7 @@ export interface ApiRandomQuoteResponse {
 	quote: Quote;
 }
 
-export async function getRandomQuote (): Promise<ApiRandomQuoteResponse> {
+export function getRandomQuote (): Promise<ApiRandomQuoteResponse> {
 	return new Promise((resolve, reject) => {
 		axios.get(randomURLRequest).then((response) => {
 			resolve(response.data);
