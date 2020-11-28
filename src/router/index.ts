@@ -6,18 +6,23 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+		component: Home
 	},
 	{
 		path: '/author/:id',
 		name: 'Author',
 		component: Author
+	},
+	{
+		path: '/:pathMatch(.*)*',
+		name: 'Not Found',
+		redirect: '/'
 	}
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
-})
+});
 
 export default router

@@ -9,6 +9,7 @@ import { defineComponent } from 'vue';
 
 import Quote from '@/components/Quote.vue';
 import { getRandomQuote } from '@/scripts/apiRequests';
+import mitt from '@/mitt';
 
 export default defineComponent({
 	name: 'Home',
@@ -36,9 +37,17 @@ export default defineComponent({
 
 		}
 	},
-	mounted () {
+	created () {
 		this.loadRandomQuote();
-	}
+
+		mitt.on('loadRandomQuote', () => {
+			console.log('loadRandomQuote');
+			this.loadRandomQuote();
+		});
+	},
+	/*beforeUnmount () {
+		mitt.off('loadRandomQuote', this.loadRandomQuote);
+	}*/
 });
 </script>
 
