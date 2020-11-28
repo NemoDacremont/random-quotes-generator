@@ -34,8 +34,6 @@ export default defineComponent({
 				this.$data.author = quoteAuthor;
 				this.$data.text = quoteText;
 				this.$data.genre = quoteGenre;
-
-				console.log('loaded');
 			})
 
 		}

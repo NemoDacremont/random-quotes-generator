@@ -41,7 +41,6 @@ export default defineComponent({
 			const response = await getAuthorQuotes(author);
 
 			this.$data.quotes = response.quotes;
-			console.log(response);
 		}
 	},
 	created () {
