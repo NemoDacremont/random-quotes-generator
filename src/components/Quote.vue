@@ -21,4 +21,32 @@ export default defineComponent({
 
 <style lang="scss">
 
+.quote {
+	position: relative;
+	width: 615px;
+
+	&::before {
+		content: '';
+
+		display: block;
+		position: absolute;
+
+		left: -100px;
+		top: 0;
+
+		width: 8px;
+		height: 100%;
+
+		background-color: var(--orange);
+	}
+
+	.quote__text {
+		padding-left: 100px;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 43px;
+		text-align: left;
+	}
+}
+
 </style>

@@ -56,4 +56,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 
+.home {
+	display: flex;
+	flex-direction: column;
+	gap: 110px;
+
+	padding: 196px 0 0 0;
+}
+
 </style>
